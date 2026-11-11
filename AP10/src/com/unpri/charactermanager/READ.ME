@@ -1,0 +1,44 @@
+## TP10 — Implementasi AppTheme dan MainWindow v0.4
+
+### 1. Deskripsi
+
+Pada TP10 ini, saya mengembangkan aplikasi Character Manager menggunakan Java Swing dengan menerapkan konsep pemisahan tampilan melalui class AppTheme dan MainWindow. Tujuan implementasi ini adalah membuat tampilan aplikasi lebih menarik, konsisten, dan mudah dikelola.
+
+### 2. Screenshot Sebelum (v0.3)
+
+Masukkan screenshot aplikasi sebelum menggunakan AppTheme di bagian ini.
+
+c:\Users\TUF GAMING\OneDrive\Pictures\Screenshots\Screenshot 2026-11-03 175815.png
+
+### 3. Screenshot Sesudah (v0.4)
+
+Masukkan screenshot aplikasi setelah menggunakan AppTheme di bagian ini.
+
+c:\Users\TUF GAMING\OneDrive\Pictures\Screenshots\Screenshot 2026-11-03 173146.png
+
+### 4. Penjelasan Penggunaan AppTheme
+
+Warna disimpan di dalam class AppTheme karena warna merupakan bagian dari tampilan antarmuka aplikasi. Dengan memisahkan pengaturan warna dari class Character, kode program menjadi lebih terstruktur dan mudah dikelola. Class Character bertugas menyimpan data karakter, sedangkan AppTheme bertugas mengatur tampilan visual. Pemisahan ini juga memudahkan perubahan tema tanpa harus mengubah struktur data pada model.
+
+### 5. Mini-Challenge
+
+Karakter dengan level minimal 5 ditampilkan menggunakan teks berwarna emas dan tebal. Batas level disimpan dalam konstanta HIGH_LEVEL_LIMIT agar nilai tersebut mudah digunakan dan diubah.
+
+### 6. Dua Properti Tambahan
+
+**a. Tooltip**
+
+Tooltip digunakan untuk menampilkan informasi nama, role, level, dan mana karakter ketika pengguna mengarahkan kursor ke kartu karakter. Properti ini membantu pengguna mengetahui informasi tambahan tanpa memenuhi tampilan utama.
+
+**b. setEnabled(false)**
+
+Properti ini digunakan untuk karakter yang memiliki level 1. Tujuannya adalah memberikan perbedaan visual terhadap karakter yang masih berada pada level awal.
+
+### 7. Kesimpulan
+
+Melalui TP10, saya memahami penggunaan AppTheme sebagai tempat pengaturan tampilan aplikasi dan MainWindow sebagai bagian yang menampilkan komponen antarmuka. Saya juga mempelajari pentingnya pemisahan tanggung jawab antara Model dan View dalam konsep MVC.
+
+### 8. Analisis Konseptual
+
+Dokumen analisis TP10:
+https://docs.google.com/document/d/1Piq_q66mG50ctaRhsp02nXr72GeleWD7/edit?usp=drivesdk&ouid=115604189359564607117&rtpof=true&sd=true
