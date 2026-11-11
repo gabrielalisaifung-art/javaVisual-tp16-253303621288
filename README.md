@@ -1,0 +1,96 @@
+# TP12 - Implementasi Layout dan Analisis MVC
+
+## 1. Tujuan
+Tugas ini bertujuan menerapkan Layout Manager pada aplikasi
+Character Manager menggunakan Java Swing. Layout yang digunakan
+adalah BorderLayout, GridLayout, dan BoxLayout.
+
+## 2. Wireframe Aplikasi
+
+Berikut rancangan susunan aplikasi:
+
++-----------------------------------------------+
+|              CHARACTER MANAGER                |
+|-----------------------------------------------|
+| Total Karakter       | Rata-rata Level        |
+| Level Tertinggi      | Level Terendah         |
+|-----------------------------------------------|
+|                                               |
+|  [Kartu 1]           [Kartu 2]                 |
+|                                               |
+|  [Kartu 3]           [Kartu 4]                 |
+|                                               |
+|  [Kartu 5]           [Kartu 6]                 |
+|                                               |
+|  [Kartu 7]           [Kartu 8]                 |
+|                                               |
+|                         | LEGENDA ROLE        |
+|                         | WARRIOR             |
+|                         | MAGE                |
+|                         | ARCHER              |
+|                         | HEALER              |
+|-----------------------------------------------|
+| Status: Aplikasi berhasil dijalankan    v0.5  |
++-----------------------------------------------+
+
+## 3. Screenshot Aplikasi
+
+### A. Ukuran Awal
+c:\Users\TUF GAMING\OneDrive\Pictures\Screenshots\Screenshot 2026-11-07 214138.png
+
+### B. Jendela Dilebarkan
+c:\Users\TUF GAMING\OneDrive\Pictures\Screenshots\Screenshot 2026-11-07 220323.png
+
+### C. Jendela Dikecilkan
+c:\Users\TUF GAMING\OneDrive\Pictures\Screenshots\Screenshot 2026-11-07 220621.png
+
+## 4. Pengamatan Resize
+
+| Kondisi | Prediksi | Hasil Pengamatan |
+|---|---|---|
+| Ukuran awal | Semua komponen terlihat rapi | Komponen tampil sesuai wilayah |
+| Jendela dilebarkan | Area CENTER bertambah luas | Kartu mendapatkan ruang lebih luas |
+| Jendela dikecilkan | Area CENTER menyempit dan scrollbar muncul | Scrollbar muncul untuk melihat daftar |
+
+## 5. Struktur Panel Bersarang
+
+Aplikasi menggunakan mainPanel dengan BorderLayout sebagai
+layout utama. Pada bagian NORTH terdapat headerPanel yang
+menampung judul dan statisticsPanel. Bagian CENTER menggunakan
+JScrollPane yang menampung scrollContent dan cardPanel untuk
+menampilkan daftar karakter. Bagian EAST menggunakan legendPanel
+dengan BoxLayout, sedangkan bagian SOUTH menggunakan statusPanel
+untuk menampilkan status aplikasi dan versi.
+
+## 6. Alasan Pemilihan Layout
+
+BorderLayout dipilih sebagai layout utama karena dapat membagi
+jendela menjadi beberapa wilayah yang jelas.
+
+GridLayout dipilih untuk statisticsPanel karena empat informasi
+statistik perlu ditampilkan secara teratur dalam dua baris dan
+dua kolom.
+
+GridLayout juga digunakan pada cardPanel agar kartu karakter
+tersusun dalam dua kolom dengan ukuran sel yang konsisten.
+
+BoxLayout dipilih untuk legendPanel karena daftar role lebih
+sesuai ditampilkan secara vertikal.
+
+FlowLayout tidak dipilih untuk panel statistik karena susunan
+komponennya dapat berpindah baris mengikuti ukuran jendela.
+GridLayout memberikan susunan yang lebih konsisten.
+
+## 7. Kesimpulan
+
+Melalui TP12, saya memahami bahwa Layout Manager membantu
+membuat aplikasi Java Swing lebih fleksibel ketika ukuran
+jendela berubah. Penggunaan BorderLayout, GridLayout,
+BoxLayout, dan JScrollPane membuat komponen tersusun lebih
+teratur. Pemisahan package model dan view juga membantu
+menjaga struktur program agar lebih mudah dikembangkan.
+
+## 8. Analisis Bagian D
+
+Link Google Docs:
+https://docs.google.com/document/d/1wbJCEVc8fia5fxkG3l46-ylBtKJ-3TKV/edit?usp=drivesdk&ouid=115604189359564607117&rtpof=true&sd=true
